@@ -2,28 +2,28 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
   
-	<groupId>[PROJECT_GROUP]</groupId>
-	<artifactId>[PROJECT_ARTIFACT]</artifactId>
-	<version>[PROJECT_VERSION:0.0.1-SNAPSHOT]</version>
+	<groupId>${PROJECT_GROUP}</groupId>
+	<artifactId>${PROJECT_ARTIFACT}</artifactId>
+	<version>${PROJECT_VERSION}</version>
 	
-  <name>[PROJECT_NAME]</name>
-	<description>[PROJECT_DESCRIPTION]</description>
+  <name>${PROJECT_NAME}</name>
+	<description>${PROJECT_DESCRIPTION}</description>
   <inception>2017</inception>
   
   <properties>
     <!-- Author details -->
-    <author.org.name>[AUTHOR_ORG_NAME]</author.org.name>
-    <author.org.url>[AUTHOR_ORG_URL]</author.org.url>
-    <author.name>[AUTHOR_NAME]</author.name>
-    <author.email>[AUTHOR_EMAIL]</author.email>
-    <author.role>[AUTHOR_ROLE:dev,devops,architect,etc...]</author.role>		
+    <author.org.name>${AUTHOR_ORG_NAME}</author.org.name>
+    <author.org.url>${AUTHOR_ORG_URL}</author.org.url>
+    <author.name>${AUTHOR_NAME}</author.name>
+    <author.email>${AUTHOR_EMAIL}</author.email>
+    <author.role>${AUTHOR_ROLE}</author.role>		
     <!-- github server corresponds to entry in ~/.m2/settings.xml -->
 		<github.global.server>github</github.global.server>
-    <repo.name>[REPO_NAME:name of the github repository]</repo.name>
-    <repo.owner>[REPO_OWNER:owner of the github]</repo.owner>
+    <repo.name>${REPO_NAME}</repo.name>
+    <repo.owner>${REPO_OWNER}</repo.owner>
     <!-- Main Class to start the java dance -->
-    <mainClass>[JAVA_MAIN_CLASS:the main class where all start]</mainClass>
-    <versioneye.projectid>[VERSIONEYE_PROJECT_ID]</versioneye.projectid>		
+    <mainClass>${JAVA_MAIN_CLASS}</mainClass>
+    <versioneye.projectid>${VERSIONEYE_PROJECT_ID}</versioneye.projectid>		
 
   </properties>
   

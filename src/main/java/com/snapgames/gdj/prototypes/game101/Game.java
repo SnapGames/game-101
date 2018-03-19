@@ -201,7 +201,7 @@ public class Game extends JFrame{
         frame.setVisible(true);
     }
 
-    public initializeGame(){
+    public void initializeGame(){
         tilemap = new TileMap(32,20,1);
         tilemap.loadFromFile("maps/level1.txt", "[=]#H<@>cP", "images/tile01.png", 32, 32);
         objects.add(tilemap);
@@ -222,6 +222,7 @@ public class Game extends JFrame{
 
     public void run(){
         Graphics2D g = (Graphics2D)this.getGraphics();
+        long previousTime=0;
         long currentTime = previousTime =  System.currentTimeMillis();
         long dt = 0;
         while(!iExitRequest){

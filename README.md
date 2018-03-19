@@ -1,6 +1,6 @@
 # [PROJECT_NAME]
 
-[![AppVeyor (win32) Build status](https://ci.appveyor.com/api/projects/status/github/[REPO_OWNER]/[REPO_NAME]?branch=[REPO_BRANCH:develop]&svg=true)](https://ci.appveyor.com/project/[REPO_OWNER]/[REPO_NAME] "AppVeyor (win32) Build status") 
+[![AppVeyor (win32) Build status](https://ci.appveyor.com/api/projects/status/github/[REPO_OWNER]/[REPO_NAME]?branch=[REPO_BRANCH]&svg=true)](https://ci.appveyor.com/project/[REPO_OWNER]/[REPO_NAME] "AppVeyor (win32) Build status") 
 [![Travis-CI (linux) Build Status](https://travis-ci.org/SnapGames/simple-java2d-engine.svg)](https://travis-ci.org/[REPO_OWNER]/[REPO_NAME] "Travis-CI (linux) Build Status") 
 [![Dependency Status](https://www.versioneye.com/user/projects/[VERSIONEYE_PROJECT_ID]/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/[VERSIONEYE_PROJECT_ID] "Dependency statues")
 
@@ -27,10 +27,11 @@ The maven project is mostly standard:
      |_ pom.xml
      |_ README.md
 
-Bellow the satandard pom.xml file, the Continuous integration files are :
+Bellow the standard pom.xml and git file, the Continuous integration files are :
 
-* appveyor.yml
-* bitbucket.org
+* `appveyor.yml` to provide configuration to [Appveyor.com](https://appveyor.com/ "go and visit AppVeyor") continuous integration service,
+* `bitbucket-pipeline.yml`  to provide configuration to [Bitbucket.org](https://bitbucket.org "go and visit BitBucket") continuous integration service,
+* `.travis.yml`  to provide configuraiton to [Travis-CI](https://travis-ci.org "go and visit Travis-CI") continuous integration service.
 
 
 ## Compile
