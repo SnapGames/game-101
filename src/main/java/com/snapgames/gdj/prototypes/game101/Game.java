@@ -11,11 +11,18 @@ import java.io.FileReader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import java.util.List;
+import java.util.ArrayList;
+
+import java.nio.file.Files;
+
 import javax.swing.JFrame;
 
 
 public class Game extends JFrame{
     public static final long serialVersionUID = 12365498746514L;
+
+
 
     public class InputHandler implements KeyListener{
         boolean[] keys = new boolean[256];
@@ -41,16 +48,31 @@ public class Game extends JFrame{
             return keys[code];
         }
     }
+    /**
+     * The interface for all Objects managed by the Game101 main class
+     */
     public interface GameObject{
-        public int layer;
-        public void update(loing dt);
+        public int layer = 0;
+        public void update(long dt);
         public void render(Graphics2D g);
         default public int getLayer(){
             return layer;
         }
-
-
     }
+
+    List<GameObject> objects = new ArrayList<>();
+
+    Sprite player;
+    TileMap tilemap;    
+
+    int WIDTH = 640;
+    int HEIGHT= 400;
+    
+    boolean isExitRequest = false;
+    boolean isPaused = false;
+
+    InputHandler inputHandler = new InputHandler();
+
     public class TileMap implements GameObject{
         char[] map;
         int width,height,layers;
@@ -58,7 +80,7 @@ public class Game extends JFrame{
         BufferedImage tileset;
         String tileCharMapping = "";
         public TileMap(int width,int height, int nbLayers){
-            map = new int[width*height*nbLayers];
+            map = new char[width*height*nbLayers];
             this.width=width;
             this.height=height;
             this.layers = nbLayers;
@@ -73,7 +95,7 @@ public class Game extends JFrame{
                 this.map = Files.readAllBytes(Paths.get(fileTileMap));
             }
         }
-        public getTile(int x, int y, int layer){
+        public char getTile(int x, int y, int layer){
             return map[(x+y*width)+(layer*height*width)];
         }
 
@@ -163,18 +185,6 @@ public class Game extends JFrame{
         }
     }
 
-    List<GameObject> objects = new ArrayList<>();
-
-    Sprite player;
-    TileMap tilemap;    
-
-    int WIDTH = 640;
-    int HEIGHT= 400;
-    
-    boolean isExitRequest = false;
-    boolean isPaused = false;
-
-    InputHandler inputHandler = new InputHandler();
     public Game(){
     }
     public void initializeWindow(){
