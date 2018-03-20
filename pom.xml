@@ -7,7 +7,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Game-101</name>
 	<description>A ample project to demonstrate game development basics.</description>
-	<inception>2018</inception>
+	<inceptionYear>2018</inceptionYear>
   
   <properties>    
 	<!-- Main Class to start the java dance -->
