@@ -10,11 +10,10 @@ import java.io.File;
 import java.io.FileReader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import javax.imageio.ImageIO;
 
 import java.util.List;
 import java.util.ArrayList;
-
-import java.nio.file.Files;
 
 import javax.swing.JFrame;
 

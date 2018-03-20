@@ -2,17 +2,17 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
   
-	<groupId>com.ge.health.dosewatch</groupId>
-	<artifactId>game101</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>Game-101</name>
-	<description>A ample project to demonstrate game development basics.</description>
-	<inception>2018</inception>
+	<groupId>[PROJECT_GROUP:com.ge.health.dosewatch]</groupId>
+	<artifactId>[PROJECT_ARTIFACT]</artifactId>
+	<version>[PROJECT_VERSION:0.0.1-SNAPSHOT]</version>
+	<name>[PROJECT_NAME]</name>
+	<description>[PROJECT_DESCRIPTION]</description>
+	<inception>[PROJECT_YEAR]</inception>
   
   <properties>    
 	<!-- Main Class to start the java dance -->
-    <mainClass>com.snapgames.gdj.prototypes.game101.Game</mainClass>
-    <versioneye.project.id>[VERSIONEYE_PROJECT_ID]</versioneye.project.id>		
+    <mainClass>[JAVA_MAIN_CLASS]</mainClass>
+    <versioneye.projectid>[VERSIONEYE_PROJECT_ID]</versioneye.projectid>		
   </properties>
   
   <dependencies>
@@ -34,34 +34,34 @@
 	</dependencies>
 
 	<organization>
-		<name>SnapGames</name>
-		<url>https://snapgames.github.io/</url>
+		<name>${author.org.name}</name>
+		<url>${author.org.url}</url>
 	</organization>
 
 	<scm>
-		<url>https://github.com/snapgames/game-101</url>
-		<connection>scm:git:git@github.com:snapgames/game-101.git</connection>
-		<developerConnection>scm:git:git@github.com:snapgames/game-101.git</developerConnection>
+		<url>https://github.com/[REPO_OWNER]/[REPO_NAME]</url>
+		<connection>scm:git:git@github.com:[REPO_OWNER]/[REPO_NAME].git</connection>
+		<developerConnection>scm:git:git@github.com:[REPO_OWNER]/[REPO_NAME].git</developerConnection>
 		<tag>${project.version}</tag>
 	</scm>
 	<issueManagement>
 		<system>github.com</system>
-		<url>https://github.com/snapgames/game-101/issues</url>
+		<url>https://github.com/[REPO_OWNER]/[REPO_NAME]/issues</url>
 	</issueManagement>
 	<ciManagement>
 		<system>travis-ci</system>
-		<url>https://travis-ci.org/snapgames/game-101</url>
+		<url>https://travis-ci.org/[REPO_OWNER]/[REPO_NAME]</url>
 	</ciManagement>
 
 	<contributors>
 		<contributor>
-			<name>Frédéric Delorme</name>
-			<email>frederic.delorme@snapgames.fr</email>
-			<organization>SnapGames</organization>
-			<organizationUrl>https://snapgames.github.io/</organizationUrl>
-			<timezone>Europe/Paris</timezone>
+			<name>[AUTHOR_NAME]</name>
+			<email>[AUTHOR_EMAIL]</email>
+			<organization>[AUTHOR_ORG_NAME]</organization>
+			<organizationUrl>[AUTHOR_ORG_URL]</organizationUrl>
+			<timezone>[AUTHOR_TIMEZONE]</timezone>
 			<roles>
-				<role>Developer</role>
+				<role>[AUTHOR_ROLE]</role>
 			</roles>
 		</contributor>
 	</contributors>
@@ -192,8 +192,8 @@
 					<includes>
 						<include>**/*</include>
 					</includes>
-					<repositoryName>game-101</repositoryName>      <!-- github repo name -->
-					<repositoryOwner>snapgames</repositoryOwner>    <!-- github username -->
+					<repositoryName>[REPO_NAME]</repositoryName>      <!-- github repo name -->
+					<repositoryOwner>[REPO_OWNER]</repositoryOwner>    <!-- github username -->
 				</configuration>
 				<executions>
 					<!-- run site-maven-plugin's 'site' target as part of the build's normal 
@@ -213,7 +213,7 @@
 				<artifactId>versioneye-maven-plugin</artifactId>
 				<version>3.11.0</version>
 				<configuration>
-					<projectId>${versioneye.project.id}</projectId>
+					<projectId>${versioneye.projectid}</projectId>
 				</configuration>
 			</plugin>
 		</plugins>

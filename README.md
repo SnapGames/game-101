@@ -1,7 +1,7 @@
-# [PROJECT_NAME]
+# Game-101
 
-[![AppVeyor (win32) Build status](https://ci.appveyor.com/api/projects/status/github/[REPO_OWNER]/[REPO_NAME]?branch=[REPO_BRANCH]&svg=true)](https://ci.appveyor.com/project/[REPO_OWNER]/[REPO_NAME] "AppVeyor (win32) Build status") 
-[![Travis-CI (linux) Build Status](https://travis-ci.org/SnapGames/simple-java2d-engine.svg)](https://travis-ci.org/[REPO_OWNER]/[REPO_NAME] "Travis-CI (linux) Build Status") 
+[![AppVeyor (win32) Build status](https://ci.appveyor.com/api/projects/status/github/snapgames/game-101?branch=develop&svg=true)](https://ci.appveyor.com/project/snapgames/game-101 "AppVeyor (win32) Build status") 
+[![Travis-CI (linux) Build Status](https://travis-ci.org/SnapGames/simple-java2d-engine.svg)](https://travis-ci.org/snapgames/game-101 "Travis-CI (linux) Build Status") 
 [![Dependency Status](https://www.versioneye.com/user/projects/[VERSIONEYE_PROJECT_ID]/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/[VERSIONEYE_PROJECT_ID] "Dependency statues")
 
 ## Introduction
@@ -12,7 +12,7 @@ TODO
 
 The maven project is mostly standard:
 
-    [PROJECT_NAME]/
+    Game-101/
      |_ src
      |  |_ main 
      |  |  |_ java 
@@ -32,6 +32,7 @@ Bellow the standard pom.xml and git file, the Continuous integration files are :
 * `appveyor.yml` to provide configuration to [Appveyor.com](https://appveyor.com/ "go and visit AppVeyor") continuous integration service,
 * `bitbucket-pipeline.yml`  to provide configuration to [Bitbucket.org](https://bitbucket.org "go and visit BitBucket") continuous integration service,
 * `.travis.yml`  to provide configuraiton to [Travis-CI](https://travis-ci.org "go and visit Travis-CI") continuous integration service.
+
 
 
 ## Compile
@@ -55,7 +56,7 @@ to execute the compiled jar, please execute the command bellow :
 or :
 
 ```bash
-    $> java -jar [PROJECT_NAME]-[PROJECT_VERSION]-jar-with-dependencies.jar
+    $> java -jar Game-101-0.0.1-SNAPSHOT-jar-with-dependencies.jar
 ```
 
 ## Publish as a Maven Repo
@@ -81,8 +82,7 @@ Before execution, be sure that your `settings.xml` contains a `server` entry wit
 ## References
 
 * [https://www.google.com/](https://www.google.com/ "open the reference")
-* ...
 
 
 
-[[AUTHOR_NAME]](mailto:[AUTHOR_MAIL] "send a mail to contact")
+[Frédéric Delorme](mailto:frederic.delorme@snapgames.fr "send a mail to contact")
