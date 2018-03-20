@@ -1,7 +1,7 @@
 # Game-101
 
-[![AppVeyor (win32) Build status](https://ci.appveyor.com/api/projects/status/github/snapgames/game-101?branch=develop&svg=true)](https://ci.appveyor.com/project/snapgames/game-101 "AppVeyor (win32) Build status") 
-[![Travis-CI (linux) Build Status](https://travis-ci.org/SnapGames/simple-java2d-engine.svg)](https://travis-ci.org/snapgames/game-101 "Travis-CI (linux) Build Status") 
+[![AppVeyor (win32) Build status](https://ci.appveyor.com/api/projects/status/github/SnapGames/game-101?branch=develop&svg=true)](https://ci.appveyor.com/project/SnapGames/game-101 "AppVeyor (win32) Build status") 
+[![Travis-CI (linux) Build Status](https://travis-ci.org/SnapGames/game-101.svg)](https://travis-ci.org/SnapGames/game-101 "Travis-CI (linux) Build Status") 
 [![Dependency Status](https://www.versioneye.com/user/projects/[VERSIONEYE_PROJECT_ID]/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/[VERSIONEYE_PROJECT_ID] "Dependency statues")
 
 ## Introduction
